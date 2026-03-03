@@ -12,7 +12,7 @@ st.title("🩺 Bác sĩ AI Chẩn Đoán Bệnh Da Liễu")
 # 2. Nạp bộ não AI
 @st.cache_resource # Để không phải nạp lại model mỗi lần bấm nút
 def load_my_model():
-    return tf.keras.models.load_model('skin_model_ultimate.h5') # Hoặc skin_model_pro.h5
+    return tf.keras.models.load_model('skin_model_v1.h5') # Hoặc skin_model_pro.h5
 
 model = load_my_model()
 
